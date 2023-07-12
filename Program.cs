@@ -22,4 +22,4 @@ int GetInput(string text)
 int number1 = GetInput("Введите пятизначное число: ");
 int number2 = 0;
 int number3 = 0;
-ShowPalindrome(number1, number2, number3);
+ShowPalindrome(number1);
