@@ -4,16 +4,15 @@
 // 12821 -> да
 // 23432 -> да
 
-void ShowPalindrome(int number1, int number2, int number3)
+void ShowPalindrome(int number1, int number2 = 0, int number3 = 0)
 {
-    if(number2 == number1 / 1000);
-    if(number3 == number1 % 100);
-    if(number2 == number3);
-    Console.Write("Палинтроп");
+    if(number2 == number3)
+        number2 = number1 / 10000;
+        number3 = number1 % 10;
+    if(number2 == number3)
+        Console.Write("Да");
     else
-    {
-       Console.Write("NO"); 
-    }           
+        Console.Write("Нет");       
 }   
 int GetInput(string text)
 {
